@@ -1,0 +1,13 @@
+﻿@viewModel ReportingSample.ViewModels.DefaultViewModel, ReportingSample
+@masterPage Views/MasterPage.dotmaster
+<dot:Content ContentPlaceHolderID="MainContent">
+
+	<h2>RDLC Report Sample</h2>
+
+	<p>
+		<dot:Button Text="Save as PDF" Click="{command: SaveAsPdf()}" />
+	</p>
+
+	<iframe src="{value: ReportUrl}" frameborder="1" width="1000" height="1300"></iframe>
+
+</dot:Content>
